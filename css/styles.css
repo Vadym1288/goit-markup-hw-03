@@ -52,11 +52,14 @@ button {
     cursor: pointer;
 }
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-  gap: 332px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 332px;
+    border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .container-page-header {
     display: flex;
@@ -74,7 +77,7 @@ button {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-right: 44px;
+    margin-right: 76px;
 }
 .logotype-second-part {
     color:#2E2F42;
@@ -84,7 +87,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 71px;
+    margin-right: 76px;
 }
 .contacts-header {
     font-style: normal;
@@ -107,6 +110,9 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 }
 .list-contakts-item:hover,
 .list-contakts-item:focus {
@@ -121,11 +127,6 @@ button {
 }
 .list-contakts-item {
     font-style: normal;
-}
-.page-header {
-    border-bottom: 1px solid #e7e9fc;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .container-page-header {
     display: flex;
