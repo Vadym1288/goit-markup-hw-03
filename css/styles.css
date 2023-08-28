@@ -1,8 +1,47 @@
+
 body {
     background: #FFF;
     font-family: 'Roboto', sans-serif;
     color: #434455;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
 .link {
     text-decoration: none;
 }
@@ -12,15 +51,30 @@ body {
 button {
     cursor: pointer;
 }
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 332px;
+}
+.container-page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
 .logotype {
     color: #4D5AE5; 
+    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: ;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    margin-right: 44px;
 }
 .logotype-second-part {
     color:#2E2F42;
@@ -30,6 +84,18 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 71px;
+}
+.contacts-header {
+    font-style: normal;
+}
+.header-menu {
+    display: flex;
+    gap: 40px;
+}
+.main-contacts {
+    display: flex;
+    gap: 40px;    
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -40,9 +106,7 @@ button {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;}
-.contacts-header {
-    font-style: normal;
+    letter-spacing: 0.02em;
 }
 .list-contakts-item:hover,
 .list-contakts-item:focus {
@@ -58,8 +122,21 @@ button {
 .list-contakts-item {
     font-style: normal;
 }
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.container-page-header {
+    display: flex;
+}
 .main-section {
-    background:#2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2e2f42;
 }
 .main-title {
     color: #FFF;
@@ -68,6 +145,9 @@ button {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -80,37 +160,65 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    padding: 16px 32px;
+}
+.list-hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.item-list-hero {
+    display: flex;
+    gap: 24px;
+}
+.adventages-list {
+    width: calc((100% - 72px) / 4);
+    text-align: left;    
 }
 .title-list-hero {
     color: #2E2F42;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .text-list-hero {
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 .section-personel {
     background-color: #F4F4FD;
+    padding: 120px 0;
+}
+.list-personel {
+    display: flex;
+    gap: 24px;    
 }
 .title-personel {
     color: #2E2F42;
-    text-align: center;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;    
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;    
 }
 .list-item-personel {
     background-color:  #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);    
+}
+.ourteam-name {
+    padding: 32px 0;
+    text-align: center;    
 }
 .name-personel {
     color: #2E2F42;
@@ -120,6 +228,7 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .position {
     color: #434455;
@@ -130,6 +239,10 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .title-portfolio {
     color: #2E2F42;
     text-align: center;
@@ -139,6 +252,22 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;    
+}
+.img-list-portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+.conteiner-section-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;    
 }
 .title-list-portfolio {
     color: #2E2F42;
@@ -147,6 +276,7 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .text-list-portfolio {
     color: #434455;
@@ -155,6 +285,11 @@ button {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.section-footer{
+    background-color: #2E2F42;
+    padding: 100px 0;
+    text-align: left;        
 }
 .footer-logo {
     color: #4D5AE5;
@@ -165,9 +300,8 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}  
-.section-footer{
-    background: #2E2F42;    
+    display: inline-block;
+    margin-bottom: 16px;
 }  
 .footer-logo-second-part {
     color: #F4F4FD;
@@ -178,6 +312,8 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }       
 .footer-text {
     color: #F4F4FD;
@@ -186,4 +322,5 @@ button {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
